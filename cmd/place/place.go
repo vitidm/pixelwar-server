@@ -27,7 +27,7 @@ var count int
 var saveInterval int
 
 func init() {
-	flag.StringVar(&port, "port", ":443", "The address and port the fileserver listens at.")
+	flag.StringVar(&port, "port", ":8080", "The address and port the fileserver listens at.")
 	flag.StringVar(&root, "root", "./root", "The directory serving files.")
 	flag.StringVar(&loadPath, "load", "", "The png to load as the canvas.")
 	flag.StringVar(&savePath, "save", "./place.png", "The path to save the canvas.")
